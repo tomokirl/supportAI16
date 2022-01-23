@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポートAI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="header-logo">サポートAI</div>
+        <nav class="header-nav">
+            <ul>
+                <li>CONCEPT</li>
+                <li>MENU</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- first-v -->
+        <div class="context">
+            <h1>サポートAI</h1>
+        </div>
+
+
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- concept section -->
+        <section id="concept">
+            <div class="concept-wrap">
+                <h2 class="title">
+                    <span class="title-b">CONCEPT</span>
+                </h2>
+                <p class="concept-context">このシステムは食材を有効に活用するための調理法を提案するAIです。<br>
+                    味や栄養素に着目し、その食材の価値を最大限に生かす既存のものだけでなく、
+                    今までに無い斬新なアイデアも提案します</p>
+
+                <h4 class="persona">使用者</h4>
+                <p class="persona-context">長崎県で一次産業を営んでいる方に向けて作成しました。 <br>
+                    その他にも食材の使用のマンネリ化を感じている方にもおすすめです。</p>
+
+        </section>
+        <!-- menu section -->
+        <section id="menu">
+            <div class="menu-wrap">
+                <h2 class="title">
+                    <span class="title-b">MENU</span>
+                    <div class="news-wrap">
+                        <ul>
+                            <li>1.下のスペースに作物名を入力してください</li>
+                            <li>2.決定ボタンを押してください</li>
+                            <li>3.次のページに調理法が表示されます</li>
+                            <li>4.お気に召すまで1~3を繰り返してください(ページを更新してください)</li>
+                        </ul>
+
+                    </div>
+                    <!--
+                </h2>
+                    <li>味</li>
+                    <li>栄養素</li>
+                    <li>箇条</li>
+                    <li>斬新</li>
+                    -->
+                    </ul>
+                    <div class="text-space">
+                        <input type="text" id="message">
+                    </div>
+                    <button onclick="setBtn()">
+                        決定
+                    </button>
+
+                    <script src="./main.js"></script>
+
+            </div>
+
+        </section>
+
+        <!-- contact section -->
+        <section id="contact">
+            <div class="inner">
+                <h2 class="title">
+                    <span class="title-b">CONTACT</span>
+                </h2>
+                <p>このサービスに関する問い合わせや、食材のデータ提供は下記の項目からお願いいたします。<br>
+                    食材のデータの場合、品種の記入と特徴を教えていただけると幸いです。</p>
+                <div class="contact-wrap">
+                    <p class="contact-caution"><span class="red">*</span>が付いたフィールドは必須項目です。</p>
+                    <div class="contact-box">
+                        <p class="contact-text">お名前<span class="red">*</span></p>
+                        <input type="text" name="contact-name" placeholder="名前をご記入ください">
+                    </div>
+                    <div class="contact-box">
+                        <p class="contact-text">メールアドレス<span class="red">*</span></p>
+                        <input type="email" name="contact-mail" placeholder="メールアドレスをご記入ください">
+                    </div>
+                    <div class="contact-box">
+                        <p class="contact-text">お問い合わせ内容<span class="red">*</span></p>
+                        <select name="contact-select">
+                            <option value="service">サービスに関するお問い合わせ</option>
+                            <option value="data">食材のデータ提供</option>
+                            <option value="other">その他のお問い合わせ</option>
+                        </select>
+                    </div>
+                    <div class="contact-box">
+                        <p class="contact-text">お問い合わせ詳細<span class="red">*</span></p>
+                        <textarea name="contact-text" placeholder="お問い合わせ内容の詳細をご記入ください"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- aside section -->
+    <aside>
+        <section id="aside">
+            <div class="aside-wrap">
+
+                <p>長崎の特産品</p>
+                <p>AIの開発方法</p>
+                <p>データの入力方法</p>
+                <p>システムの仕組み</p>
+            </div>
+        </section>
+    </aside>
+    <!-- footer section -->
+    <footer>
+        <p class="team-info">実社会課題解決プロジェクト 16班</p>
+    </footer>
+
+</body>
+
+</html>
