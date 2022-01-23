@@ -1,0 +1,383 @@
+/*全体のスタイル（CSSリセット用）*/
+*{
+    /* padding,borderが要素の中に入る */
+    box-sizing:border-box;
+}
+ul{
+    /* リストの・を消す */
+    list-style: none;
+    margin:0;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,button{
+    margin:0;
+    padding:0;
+    font-weight:normal;
+}
+
+a{
+    color:inherit;
+    /* 文字の下の線を消す */
+    text-decoration:none;   
+}
+
+body{
+    color:#555;
+    margin:0;
+    line-height:1.6;
+}
+
+/* header */
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:0 20px;
+    color:#fff;
+    background-color:black;
+    position:absolute;
+    z-index:10;
+}
+
+.header-logo{
+    padding:20px 0;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.header-nav ul{
+    display:flex;
+    padding:22px 0;
+}
+
+.header-nav ul li{
+    margin-left:55px;
+    font-size:15px;
+}
+
+
+
+/* first-v */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.first-v-wrap{
+    padding:255px 0 255px;
+    margin:0 auto;
+    width:250px;
+    text-align:center;
+}
+
+.first-v-title{
+    margin-bottom:150px;
+    font-weight:bold;
+    font-size:27px;
+}
+
+.first-v-title::after{
+    display:black;
+    content:"";
+    width:100px;
+    border-top:1px solid #fff;
+    margin:20px auto 0;
+}
+
+/*　concept */
+#concept{
+    height:400px;
+    background-image:URL("./img/white0016.png");
+    background-size:cover;
+    color:black;
+    position:relative;
+}
+
+.concept-wrap{
+    padding:50px 0 25px;
+    margin:0 auto;
+    width:1000px;
+    text-align:center;
+}
+
+.persona{
+    margin:50px 0 0 0;
+}
+
+/* menu */
+#menu{
+     height:500px;
+    background-image:URL("./img/yellow0013.png");
+    background-size:cover;
+    color:black;
+    position:relative;
+}
+
+.menu-wrap{
+    padding:50px 0 255px;
+    margin:0 auto;
+    width:800px;
+    text-align:center;
+}
+
+
+
+
+/* contact */
+
+ #contact{
+    background-image:URL("./img/blue0040.png");
+    background-size:cover;
+    color:black;
+}
+
+.inner{
+    text-align:center;
+}
+
+#contact .title::before, #contact .title::after{
+    border-color:black;
+}
+
+.contact-wrap{
+    width:600px;
+    margin:0 auto;
+}
+
+input,select,textarea{
+    width:100%;
+    border-radius:7px;
+    padding:15px ;
+}
+
+input,select{
+    height:55px;
+}
+
+textarea{
+    height:185px;
+}
+
+select{
+    appearance:none;
+}
+
+.contact-box:nth-of-type(3){
+    position:relative;
+}
+
+.contact-box:nth-of-type(3)::after{
+    position:absolute;
+    background-image:URL("./img/arrow.png");
+    background-size:100%;
+    display:black;
+    content:"";
+    width:15px;
+    height:15px;
+    top:60%;
+    right:20px;
+}
+
+.contact-caution{
+    margin:10px 0 15px;
+    font-size:15px;
+}
+
+.contact-box{
+    margin-bottom:33px;
+}
+
+.contact-box:nth-of-type(4){
+    margin-bottom:0px;
+}
+
+.contact-text{
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.red{
+    color:red;
+    margin-left:8px;
+}
+
+.caution-red{
+    margin-left:0px;
+    margin-right:8px;
+}
+
+
+/* aside */
+#aside{
+     height:100px;
+    background-image:URL("./img/white0095.png");
+    background-size:cover;
+    color:black;
+    position:relative;
+}
+
+.aseide-wrap{
+    padding:255px 0 255px;
+    margin:0 auto;
+    width:250px;
+    text-align:center;
+}
+
+/* footerのスタイル */
+footer{
+    background-color:#191919;
+    height:50px;
+}
+
+.team-info{
+    text-align:center;
+    line-height:50px;
+    font-weight:bold;
+    font-size:12px;
+    color:#fff;
+}
